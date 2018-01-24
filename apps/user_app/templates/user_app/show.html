@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users Show</title>
+</head>
+<body>
+    <h1>User {{data.id}}</h1>
+    <p>Full Name: {{data.first_name}} {{data.last_name}}</p>
+    <p>Email: {{data.email}}</p>
+    <p>Created at: {{data.created_at}}</p>
+    <a href="/users/{{data.id}}/edit/">Edit</a> | <a href="/users/delete/{{data.id}}">Delete</a><br>
+    <a href="/users/">Go Back</a>
+    
+</body>
+</html>
